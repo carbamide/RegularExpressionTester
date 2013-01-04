@@ -15,8 +15,9 @@
 @property (weak) IBOutlet NSTextField *regularExpressionField;
 @property (unsafe_unretained) IBOutlet NSTextView *resultTextView;
 @property (unsafe_unretained) IBOutlet NSTextView *testTextTextView;
-@property (unsafe_unretained) IBOutlet NSPanel *optionsPanel;
 
 -(IBAction)testIt:(id)sender;
+
+-(void)resetResults;
 
 @end

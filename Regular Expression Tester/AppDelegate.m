@@ -17,8 +17,7 @@
 
 -(IBAction)testIt:(id)sender
 {
-    [[self resultTextView] setString:@""];
-    [[self resultTextView] setString:[[self testTextTextView] string]];
+    [self resetResults];
     
     NSError *error = nil;
     
@@ -34,6 +33,12 @@
         
         [highlightedString addAttribute:NSBackgroundColorAttributeName value:[NSColor yellowColor] range:[match range]];
     }
+}
+
+-(void)resetResults
+{
+    [[self resultTextView] setString:@""];
+    [[self resultTextView] setString:[[self testTextTextView] string]];
 }
 
 @end
