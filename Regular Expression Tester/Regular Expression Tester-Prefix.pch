@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Regular Expression Tester' target in the 'Regular Expression Tester' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
